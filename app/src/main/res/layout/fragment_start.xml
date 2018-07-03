@@ -11,7 +11,7 @@
         android:id="@+id/buttonStart3"
         android:layout_width="187dp"
         android:layout_height="47dp"
-        android:layout_marginStart="48dp"
+        android:layout_marginStart="100dp"
         android:layout_marginTop="36dp"
         android:backgroundTint="@color/buttonColor"
         android:text="Wissen aneignen"
@@ -26,7 +26,7 @@
         android:layout_height="47dp"
         android:layout_centerInParent="true"
         android:layout_marginBottom="80dp"
-        android:layout_marginStart="48dp"
+        android:layout_marginStart="100dp"
         android:backgroundTint="@color/buttonColor"
         android:text="Mitspieler suchen"
         android:textAllCaps="false"
@@ -53,12 +53,26 @@
         android:layout_width="187dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="36dp"
-        android:layout_marginStart="48dp"
+        android:layout_marginStart="100dp"
         android:backgroundTint="@color/colorPri"
         android:text="Alleine spielen"
         android:textAllCaps="false"
         android:textColor="@android:color/background_light"
         app:layout_constraintBottom_toTopOf="@+id/buttonStart2"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="35dp"
+        android:text="Offene Anfragen"
+        android:textColor="@color/buttonColor"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button_start"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </android.support.constraint.ConstraintLayout>
