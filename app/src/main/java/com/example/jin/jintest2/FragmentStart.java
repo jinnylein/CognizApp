@@ -47,7 +47,7 @@ public class FragmentStart extends Fragment {
 
         queue = Volley.newRequestQueue(MainActivity.context);
 
-        uriString = "https://gist.githubusercontent.com/lengers/2f37c68881b6d924b963e5474d365e6a/raw/0ec81132633308545bd422df5c8c0bc873db5829/all.json";
+        uriString = "https://gist.githubusercontent.com/jinnylein/ab9ad777a935036a6d9ef6d9470a5eb8/raw/0f328c738bbf810a8f83afcd1fce1c7f4e3d0a41/all.json";
         context = rootView.getContext();
         startGame = new Intent(context, GameActivity.class);
 

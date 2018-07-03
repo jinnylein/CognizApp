@@ -24,8 +24,7 @@ public class ResultActivity extends AppCompatActivity {
         int correct = intent.getIntExtra("correct", 0);
         int count = intent.getIntExtra("count", 0);
 
-        ((TextView) findViewById(R.id.textViewCorrect)).setText(String.valueOf(correct) + " Fragen richtig beantwortet");
-        ((TextView) findViewById(R.id.textViewCount)).setText("Insgesamt " + String.valueOf(count) + " Fragen");
+        ((TextView) findViewById(R.id.textViewCorrect)).setText("Du hast insgesamt " + String.valueOf(correct) + " von " + String.valueOf(count) + " Fragen richtig beantwortet.");
 
         ((Button) findViewById(R.id.backButton)).setOnClickListener(new View.OnClickListener() {
             @Override

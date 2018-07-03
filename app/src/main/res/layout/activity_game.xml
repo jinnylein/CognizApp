@@ -8,35 +8,46 @@
 
     <Button
         android:id="@+id/buttonAnswer3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="24dp"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="400dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginStart="56dp"
+        android:backgroundTint="@android:color/background_light"
         android:text="Button"
+        android:textAllCaps="false"
+        android:textColor="@color/darkGray"
         app:layout_constraintBottom_toTopOf="@+id/buttonAnswer1"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonAnswer0"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/buttonAnswer2"
-        android:layout_width="88dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="25dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginStart="32dp"
+        android:layout_width="400dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="70dp"
+        android:layout_marginEnd="56dp"
+        android:backgroundTint="@android:color/background_light"
         android:text="Button"
+        android:textAllCaps="false"
+        android:textColor="@color/darkGray"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
         android:id="@+id/buttonAnswer0"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="24dp"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="400dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="50dp"
+        android:layout_marginEnd="56dp"
+        android:backgroundTint="@android:color/background_light"
         android:text="Button"
+        android:textAllCaps="false"
+        android:textColor="@color/darkGray"
         app:layout_constraintBottom_toTopOf="@+id/buttonAnswer2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
         android:id="@+id/textViewQuestion"
@@ -44,9 +55,11 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="50dp"
         android:text="TextView"
+        android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColor="@color/colorPriDark"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -54,12 +67,17 @@
 
     <Button
         android:id="@+id/buttonAnswer1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="24dp"
+        android:layout_width="400dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="70dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginStart="56dp"
+        android:backgroundTint="@android:color/background_light"
         android:text="Button"
-        app:layout_constraintBottom_toTopOf="@+id/buttonAnswer0"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:textAllCaps="false"
+        android:textColor="@color/darkGray"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonAnswer2"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView

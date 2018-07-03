@@ -21,15 +21,28 @@
         android:id="@+id/textViewCorrect"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="439dp"
+        android:layout_marginStart="439dp"
+        android:layout_marginTop="50dp"
         android:text="TextView"
-        tools:layout_editor_absoluteX="90dp"
-        tools:layout_editor_absoluteY="82dp" />
+        android:textColor="@color/colorPriDark"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <TextView
-        android:id="@+id/textViewCount"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="358dp"
-        tools:layout_editor_absoluteY="210dp" />
+        android:id="@+id/textView"
+        android:layout_width="232dp"
+        android:layout_height="42dp"
+        android:layout_marginEnd="417dp"
+        android:layout_marginStart="418dp"
+        android:layout_marginTop="60dp"
+        android:text="Durchgang beendet."
+        android:textAlignment="center"
+        android:textColor="@color/colorPriDark"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </android.support.constraint.ConstraintLayout>
