@@ -6,6 +6,7 @@ import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -28,6 +29,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
     private TextView textViewQuestion, textViewCorrect, textViewProgress;
     private Button buttonAnswer0, buttonAnswer1, buttonAnswer2, buttonAnswer3;
     private String correctAnswer;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -68,8 +70,8 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
             counter += 1;
             JSONObject obj = questionArray.get(0);
             textViewQuestion.setText(obj.getString("question"));
-            textViewProgress.setText(String.valueOf(counter) + "/" + String.valueOf(questions.length()));
-            textViewCorrect.setText(String.valueOf(correct) + "/" + String.valueOf(questions.length() + " korrekt"));
+            textViewProgress.setText("Frage " + String.valueOf(counter) + "/" + String.valueOf(questions.length()));
+            textViewCorrect.setText(String.valueOf(correct) + "/" + String.valueOf(questions.length() + " Fragen korrekt"));
             correctAnswer = obj.getJSONObject("answers").getString(obj.getString("correct"));
             ArrayList<String> answers = new ArrayList<>();
             JSONObject answersObj = obj.getJSONObject("answers");
@@ -110,11 +112,17 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
         }
         if (button.getText() == correctAnswer) {
             correct +=1;
-            Toast.makeText(this, "Richtige Antwort!",
-                    Toast.LENGTH_SHORT).show();
+            Toast toast = Toast.makeText(this, "Richtige Antwort!", Toast.LENGTH_SHORT);
+            toast.setGravity(Gravity.CENTER, 0, 455);
+            toast.show();
+         //   Toast.makeText(this, "Richtige Antwort!",
+         //           Toast.LENGTH_SHORT).show();
         } else {
-            Toast.makeText(this, "Leider falsch!",
-                    Toast.LENGTH_SHORT).show();
+            Toast toast = Toast.makeText(this, "Leider falsch!", Toast.LENGTH_SHORT);
+            toast.setGravity(Gravity.CENTER, 0, 455);
+            toast.show();
+         //   Toast.makeText(this, "Leider falsch!",
+         //           Toast.LENGTH_SHORT).show();
         }
 
         if (counter < questionArray.size()) {
@@ -136,8 +144,8 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
 
             textViewQuestion.setText(obj.getString("question"));
 
-            textViewProgress.setText(String.valueOf(counter) + "/" + String.valueOf(questions.length()));
-            textViewCorrect.setText(String.valueOf(correct) + "/" + String.valueOf(questions.length() + " korrekt"));
+            textViewProgress.setText("Frage " + String.valueOf(counter) + "/" + String.valueOf(questions.length()));
+            textViewCorrect.setText(String.valueOf(correct) + "/" + String.valueOf(questions.length() + " Fragen korrekt"));
             correctAnswer = obj.getJSONObject("answers").getString(obj.getString("correct"));
             ArrayList<String> answers = new ArrayList<>();
             JSONObject answersObj = obj.getJSONObject("answers");
