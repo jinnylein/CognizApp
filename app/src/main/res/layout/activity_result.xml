@@ -8,13 +8,17 @@
 
     <Button
         android:id="@+id/backButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:layout_marginStart="16dp"
-        android:text="Zum Menü"
+        android:layout_width="160dp"
+        android:layout_height="57dp"
+        android:layout_marginBottom="60dp"
+        android:layout_marginEnd="400dp"
+        android:layout_marginStart="400dp"
+        android:backgroundTint="@color/colorPri"
+        android:text="Zurück zum Menü"
         android:textAllCaps="false"
+        android:textColor="@android:color/background_light"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
@@ -33,7 +37,7 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="232dp"
+        android:layout_width="370dp"
         android:layout_height="42dp"
         android:layout_marginEnd="417dp"
         android:layout_marginStart="418dp"
@@ -41,8 +45,24 @@
         android:text="Durchgang beendet."
         android:textAlignment="center"
         android:textColor="@color/colorPriDark"
-        android:textSize="24sp"
+        android:textSize="26sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="847dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginStart="57dp"
+        android:layout_marginTop="50dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="@color/colorPriDark"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCorrect" />
 </android.support.constraint.ConstraintLayout>
